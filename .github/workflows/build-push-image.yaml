@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 env:
-  GHCR_REPO: ghcr.io/${{ github.repository_owner }}/nms-optimizer
-  DOCKERHUB_REPO: bonztm/nms-optimizer
+  GHCR_REPO: ghcr.io/${{ github.repository_owner }}/nms-optimizer-service
+  DOCKERHUB_REPO: bonztm/nms-optimizer-service
 
 jobs:
   build-push-image:
@@ -46,12 +46,12 @@ jobs:
 
       - name: Create docker context
         run: |
-          docker context create nms-optimizer
+          docker context create nms-optimizer-service
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          endpoint: nms-optimizer
+          endpoint: nms-optimizer-service
 
       - name: Generate docker image tags
         id: metadata
@@ -76,7 +76,7 @@ jobs:
 
       - name: Remove docker context
         if: always()
-        run: docker context rm nms-optimizer
+        run: docker context rm nms-optimizer-service
 
       - name: Update Dockerhub Description
         uses: peter-evans/dockerhub-description@v3

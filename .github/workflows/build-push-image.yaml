@@ -17,7 +17,7 @@ env:
 jobs:
   build-push-image:
     runs-on: 
-      - nms-optimizer-optimizer
+      - nms-optimizer-service
 
     steps:
       - name: checkout repo content

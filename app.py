@@ -61,6 +61,6 @@ def get_ship_types():
     return jsonify(ship_types)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8080)
 
 

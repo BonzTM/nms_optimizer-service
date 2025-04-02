@@ -1,23 +1,23 @@
 # These value are highly generalized and do not reepresent the actual values in the game. They are ratios derrived from in-game experimentation and used for properly seeding the solving allgorithm.
 
+
 modules = {
     "standard": {
         "label": "Standard / Exotic Starships",
         "types": {
-            "Weaponry":
-                [
+            "Weaponry": [
                 {
                     "label": "Cyclotron Ballista",
                     "key": "cyclotron",
                     "image": "cyclotron.webp",
-                    "color": "red",
+                    "color": "purple",
                     "modules": [
                         {
                             "id": "CB",
                             "type": "core",
                             "label": "Cyclotron Ballista",
                             "bonus": 1.0,
-                            "adjacency": False,
+                            "adjacency": True,
                             "sc_eligible": True,
                             "image": "cyclotron.png",
                         },
@@ -63,7 +63,7 @@ modules = {
                     "label": "Infraknife Accelerator",
                     "key": "infra",
                     "image": "infra.webp",
-                    "color": "blue",
+                    "color": "red",
                     "modules": [
                         {
                             "id": "IK",
@@ -116,7 +116,7 @@ modules = {
                     "label": "Phase Beam",
                     "key": "phase",
                     "image": "phase.webp",
-                    "color": "blue",
+                    "color": "green",
                     "modules": [
                         {
                             "id": "PB",
@@ -169,7 +169,7 @@ modules = {
                     "label": "Photon Cannon",
                     "key": "photon",
                     "image": "photon.webp",
-                    "color": "blue",
+                    "color": "cyan",
                     "modules": [
                         {
                             "id": "PC",
@@ -222,7 +222,7 @@ modules = {
                     "label": "Positron Ejector",
                     "key": "positron",
                     "image": "positron.webp",
-                    "color": "blue",
+                    "color": "amber",
                     "modules": [
                         {
                             "id": "PE",
@@ -275,7 +275,7 @@ modules = {
                     "label": "Rocket Launcher",
                     "key": "rocket",
                     "image": "rocket.webp",
-                    "color": "blue",
+                    "color": "iris",
                     "modules": [
                         {
                             "id": "RL",
@@ -303,14 +303,14 @@ modules = {
                     "label": "Starship Shields",
                     "key": "shield",
                     "image": "shield.webp",
-                    "color": "blue",
+                    "color": "yellow",
                     "modules": [
                         {
                             "id": "DS",
                             "type": "core",
                             "label": "Defensive Shields",
-                            "bonus": 1.0,
-                            "adjacency": False,
+                            "bonus": 0.1,
+                            "adjacency": True,
                             "sc_eligible": False,
                             "image": "shield.png",
                         },
@@ -358,7 +358,7 @@ modules = {
                     "label": "Hyperdrive",
                     "key": "hyper",
                     "image": "hyper.webp",
-                    "color": "blue",
+                    "color": "sky",
                     "modules": [
                         {
                             "id": "HD",
@@ -417,7 +417,7 @@ modules = {
                         {
                             "id": "Xa",
                             "type": "bonus",
-                            "label": "Hyperdrive Upgrade Tau",
+                            "label": "Hyperdrive Upgrade Sigma",
                             "bonus": 0.320,
                             "adjacency": True,
                             "sc_eligible": True,
@@ -447,14 +447,14 @@ modules = {
                     "label": "Launch Thruster",
                     "key": "launch",
                     "image": "launch.webp",
-                    "color": "blue",
+                    "color": "jade",
                     "modules": [
                         {
                             "id": "LT",
                             "type": "core",
                             "label": "Launch Thruster",
                             "bonus": 0.0,
-                            "adjacency": False,
+                            "adjacency": True,
                             "sc_eligible": False,
                             "image": "launch.png",
                         },
@@ -509,15 +509,15 @@ modules = {
                     "label": "Pulse Engine",
                     "key": "pulse",
                     "image": "pulse.webp",
-                    "color": "blue",
+                    "color": "orange",
                     "modules": [
                         {
                             "id": "PE",
                             "type": "core",
                             "label": "Pulse Engine",
-                            "bonus": 0.0,
-                            "adjacency": False,
-                            "sc_eligible": False,
+                            "bonus": 0.05,
+                            "adjacency": True,
+                            "sc_eligible": True,
                             "image": "pulse.png",
                         },
                         {
@@ -526,7 +526,7 @@ modules = {
                             "label": "Flight Assist Override",
                             "bonus": 0.08,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "flight-assist.png",
                         },
                         {
@@ -535,25 +535,25 @@ modules = {
                             "label": "Photonix Core",
                             "bonus": 0.067,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "photonix.png",
                         },
                         {
                             "id": "SL",
                             "type": "bonus",
                             "label": "Sub-Light Amplifier",
-                            "bonus": 0.00,
+                            "bonus": 0.09,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "sublight.png",
                         },
                         {
                             "id": "ID",
                             "type": "bonus",
                             "label": "Instability Drive",
-                            "bonus": 0.00,
+                            "bonus": 0.01,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "instability.png",
                         },
                         {
@@ -585,14 +585,13 @@ modules = {
                         },
                     ],
                 },
-
             ],
             "Utilities": [
                 {
                     "label": "Aqua-Jets",
                     "key": "aqua",
                     "image": "aquajet.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "AJ",
@@ -609,7 +608,7 @@ modules = {
                     "label": "Bobbleheads",
                     "key": "bobble",
                     "image": "bobble.webp",
-                    "color": "white",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "AP",
@@ -653,7 +652,7 @@ modules = {
                     "label": "Scanners",
                     "key": "scanners",
                     "image": "scanner.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "CD",
@@ -688,7 +687,7 @@ modules = {
                     "label": "Starship Trails",
                     "key": "trails",
                     "image": "trails.webp",
-                    "color": "blue",
+                    "color": "gray",
                     "modules": [
                         {
                             "id": "AB",
@@ -786,7 +785,7 @@ modules = {
                     "label": "Teleporter",
                     "key": "teleporter",
                     "image": "teleport.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "TP",
@@ -805,20 +804,19 @@ modules = {
     "sentinel": {
         "label": "Sentinel Interceptors",
         "types": {
-            "Weaponry":
-                [
+            "Weaponry": [
                 {
                     "label": "Cyclotron Ballista",
                     "key": "cyclotron",
                     "image": "cyclotron.webp",
-                    "color": "red",
+                    "color": "purple",
                     "modules": [
                         {
                             "id": "CB",
                             "type": "core",
                             "label": "Cyclotron Ballista",
                             "bonus": 1.0,
-                            "adjacency": False,
+                            "adjacency": True,
                             "sc_eligible": True,
                             "image": "cyclotron.png",
                         },
@@ -864,7 +862,7 @@ modules = {
                     "label": "Infraknife Accelerator",
                     "key": "infra",
                     "image": "infra.webp",
-                    "color": "blue",
+                    "color": "red",
                     "modules": [
                         {
                             "id": "IK",
@@ -917,7 +915,7 @@ modules = {
                     "label": "Phase Beam",
                     "key": "phase",
                     "image": "phase.webp",
-                    "color": "blue",
+                    "color": "green",
                     "modules": [
                         {
                             "id": "PB",
@@ -970,7 +968,7 @@ modules = {
                     "label": "Positron Ejector",
                     "key": "positron",
                     "image": "positron.webp",
-                    "color": "blue",
+                    "color": "amber",
                     "modules": [
                         {
                             "id": "PE",
@@ -1023,7 +1021,7 @@ modules = {
                     "label": "Rocket Launcher",
                     "key": "rocket",
                     "image": "rocket.webp",
-                    "color": "blue",
+                    "color": "iris",
                     "modules": [
                         {
                             "id": "RL",
@@ -1049,7 +1047,7 @@ modules = {
                     "label": "Sentinel Cannon",
                     "key": "photon",
                     "image": "cannon.webp",
-                    "color": "blue",
+                    "color": "cyan",
                     "modules": [
                         {
                             "id": "PC",
@@ -1104,7 +1102,7 @@ modules = {
                     "label": "Aeron Shields",
                     "key": "shield",
                     "image": "aeron.webp",
-                    "color": "blue",
+                    "color": "yellow",
                     "modules": [
                         {
                             "id": "DS",
@@ -1155,11 +1153,11 @@ modules = {
                 },
             ],
             "Hyperdrive": [
-                                {
+                {
                     "label": "Anti-Gravity Well",
                     "key": "launch",
                     "image": "anti-gravity.webp",
-                    "color": "blue",
+                    "color": "jade",
                     "modules": [
                         {
                             "id": "LT",
@@ -1221,7 +1219,7 @@ modules = {
                     "label": "Hyperdrive",
                     "key": "hyper",
                     "image": "hyper.webp",
-                    "color": "blue",
+                    "color": "sky",
                     "modules": [
                         {
                             "id": "HD",
@@ -1230,7 +1228,7 @@ modules = {
                             "bonus": 0.0,
                             "adjacency": True,
                             "sc_eligible": False,
-                            "image": "hyperdrive.png",
+                            "image": "crimson.png",
                         },
                         {
                             "id": "AD",
@@ -1280,7 +1278,7 @@ modules = {
                         {
                             "id": "Xa",
                             "type": "bonus",
-                            "label": "Hyperdrive Upgrade Tau",
+                            "label": "Hyperdrive Upgrade Sigma",
                             "bonus": 0.320,
                             "adjacency": True,
                             "sc_eligible": True,
@@ -1306,18 +1304,17 @@ modules = {
                         },
                     ],
                 },
-
                 {
                     "label": "Luminance Drive",
                     "key": "pulse",
                     "image": "luminance.webp",
-                    "color": "blue",
+                    "color": "orange",
                     "modules": [
                         {
                             "id": "PE",
                             "type": "core",
                             "label": "Luminance Drive",
-                            "bonus": 0.0,
+                            "bonus": 0.05,
                             "adjacency": False,
                             "sc_eligible": False,
                             "image": "luminance.png",
@@ -1333,29 +1330,38 @@ modules = {
                         },
                         {
                             "id": "PC",
+                            "type": "reward",
+                            "label": "Photonix Core",
+                            "bonus": 0.067,
+                            "adjacency": True,
+                            "sc_eligible": False,
+                            "image": "photonix.png",
+                        },
+                        {
+                            "id": "PI",
                             "type": "bonus",
                             "label": "Pilot Interface",
                             "bonus": 0.067,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "pilot.png",
                         },
                         {
                             "id": "SL",
                             "type": "bonus",
                             "label": "Sub-Light Amplifier",
-                            "bonus": 0.00,
+                            "bonus": 0.09,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "sublight.png",
                         },
                         {
                             "id": "ID",
                             "type": "bonus",
                             "label": "Instability Drive",
-                            "bonus": 0.00,
+                            "bonus": 0.01,
                             "adjacency": True,
-                            "sc_eligible": False,
+                            "sc_eligible": True,
                             "image": "instability.png",
                         },
                         {
@@ -1387,14 +1393,13 @@ modules = {
                         },
                     ],
                 },
-
             ],
             "Utilities": [
                 {
                     "label": "Aqua-Jets",
                     "key": "aqua",
                     "image": "aquajet.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "AJ",
@@ -1411,7 +1416,7 @@ modules = {
                     "label": "Bobbleheads",
                     "key": "bobble",
                     "image": "bobble.webp",
-                    "color": "white",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "AP",
@@ -1455,7 +1460,7 @@ modules = {
                     "label": "Scanners",
                     "key": "scanners",
                     "image": "scanner.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "CD",
@@ -1490,7 +1495,7 @@ modules = {
                     "label": "Starship Trails",
                     "key": "trails",
                     "image": "trails.webp",
-                    "color": "blue",
+                    "color": "gray",
                     "modules": [
                         {
                             "id": "AB",
@@ -1588,7 +1593,7 @@ modules = {
                     "label": "Teleporter",
                     "key": "teleporter",
                     "image": "teleport.webp",
-                    "color": "blue",
+                    "color": "black",
                     "modules": [
                         {
                             "id": "TP",
@@ -1610,115 +1615,115 @@ solves = {
     "standard": {  # Ship type
         "cyclotron": {
             "map": {
-                (0, 0): "CB",
-                (1, 0): "Xa",
-                (2, 0): "QR",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xa",
+                (1, 0): "Xb",
+                (0, 1): "CB",
+                (1, 1): "Xc",
+                (0, 2): "QR",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "infra": {
             "map": {
-                (0, 0): "IK",
-                (1, 0): "Xa",
-                (2, 0): "QR",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xc",
+                (1, 0): "Xb",
+                (0, 1): "IK",
+                (1, 1): "Xa",
+                (0, 2): "QR",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "phase": {
             "map": {
-                (0, 0): "PB",
-                (1, 0): "Xa",
-                (2, 0): "FD",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xb",
+                (1, 0): "Xc",
+                (0, 1): "PB",
+                (1, 1): "Xa",
+                (0, 2): "FD",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "photon": {
             "map": {
-                (0, 0): "PC",
-                (1, 0): "Xa",
-                (2, 0): "NO",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "NO",
+                (1, 0): "None",
+                (0, 1): "PC",
+                (1, 1): "Xc",
+                (0, 2): "Xa",
+                (1, 2): "Xb",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "positron": {
             "map": {
-                (0, 0): "PE",
-                (1, 0): "Xa",
-                (2, 0): "FS",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "FS",
+                (1, 0): "None",
+                (0, 1): "PE",
+                (1, 1): "Xa",
+                (0, 2): "Xc",
+                (1, 2): "Xb",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "rocket": {
             "map": {
                 (0, 0): "RL",
                 (1, 0): "LR",
             },
-            "score": 1.112,
+            "score": 1.16,
         },
         "hyper": {
             "map": {
                 (0, 0): "HD",
-                (1, 0): "AD",
-                (2, 0): "CD",
-                (0, 1): "ED",
+                (1, 0): "ED",
+                (2, 0): "ID",
+                (0, 1): "Xc",
                 (1, 1): "Xa",
                 (2, 1): "Xb",
-                (0, 2): "EW",
-                (1, 2): "Xc",
-                (2, 2): "ID",
+                (0, 2): "CD",
+                (1, 2): "AD",
+                (2, 2): "EW",
             },
-            "score": 4.22,
+            "score": 1.30
         },
         "launch": {
             "map": {
-                (0, 0): "LT",
-                (1, 0): "Xa",
-                (2, 0): "EF",
-                (0, 1): "Xc",
+                (0, 0): "EF",
+                (1, 0): "LT",
+                (0, 1): "Xa",
                 (1, 1): "Xb",
-                (2, 1): "RC",
+                (0, 2): "Xc",
+                (1, 2): "RC",
             },
-            "score": 3.40,
+            "score": 1.30
         },
         "pulse": {
             "map": {
-                (0, 0): "PE",
+                (0, 0): "FA",
                 (1, 0): "Xb",
-                (2, 0): "FA",
+                (2, 0): "PC",
                 (0, 1): "Xc",
                 (1, 1): "Xa",
-                (2, 1): "PC",
+                (2, 1): "PE",
                 (0, 2): "SL",
                 (1, 2): "ID",
                 (2, 2): "None",
             },
-            "score": 1.88,
+            "score": 0.61
         },
         "shield": {
             "map": {
-                (0, 0): "DS",
-                (1, 0): "Xa",
-                (2, 0): "AA",
-                (0, 1): "Xc",
-                (1, 1): "Xb",
-                (2, 1): "None",
+                (0, 0): "AA",
+                (1, 0): "None",
+                (0, 1): "Xa",
+                (1, 1): "Xc",
+                (0, 2): "Xb",
+                (1, 2): "DS",
             },
-            "score": 3.98,
+            "score": 1.26
         },
         "trails": {
             "map": {
@@ -1741,115 +1746,115 @@ solves = {
     "sentinel": {  # Ship type
         "cyclotron": {
             "map": {
-                (0, 0): "CB",
-                (1, 0): "Xa",
-                (2, 0): "QR",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xa",
+                (1, 0): "Xb",
+                (0, 1): "CB",
+                (1, 1): "Xc",
+                (0, 2): "QR",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "infra": {
             "map": {
-                (0, 0): "IK",
-                (1, 0): "Xa",
-                (2, 0): "QR",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xc",
+                (1, 0): "Xb",
+                (0, 1): "IK",
+                (1, 1): "Xa",
+                (0, 2): "QR",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "phase": {
             "map": {
-                (0, 0): "PB",
-                (1, 0): "Xa",
-                (2, 0): "FD",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "Xb",
+                (1, 0): "Xc",
+                (0, 1): "PB",
+                (1, 1): "Xa",
+                (0, 2): "FD",
+                (1, 2): "None",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "photon": {
             "map": {
-                (0, 0): "PC",
-                (1, 0): "Xa",
-                (2, 0): "NO",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "NO",
+                (1, 0): "None",
+                (0, 1): "PC",
+                (1, 1): "Xc",
+                (0, 2): "Xa",
+                (1, 2): "Xb",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "positron": {
             "map": {
-                (0, 0): "PE",
-                (1, 0): "Xa",
-                (2, 0): "FS",
-                (0, 1): "None",
-                (1, 1): "Xb",
-                (2, 1): "Xc",
+                (0, 0): "FS",
+                (1, 0): "None",
+                (0, 1): "PE",
+                (1, 1): "Xa",
+                (0, 2): "Xc",
+                (1, 2): "Xb",
             },
-            "score": 5.03,
+            "score": 2.75
         },
         "rocket": {
             "map": {
                 (0, 0): "RL",
                 (1, 0): "LR",
             },
-            "score": 1.112,
+            "score": 1.16,
         },
         "hyper": {
             "map": {
                 (0, 0): "HD",
-                (1, 0): "AD",
-                (2, 0): "CD",
-                (0, 1): "ED",
+                (1, 0): "ED",
+                (2, 0): "ID",
+                (0, 1): "Xc",
                 (1, 1): "Xa",
                 (2, 1): "Xb",
-                (0, 2): "EW",
-                (1, 2): "Xc",
-                (2, 2): "ID",
+                (0, 2): "CD",
+                (1, 2): "AD",
+                (2, 2): "EW",
             },
-            "score": 4.22,
+            "score": 1.30
         },
         "launch": {
             "map": {
-                (0, 0): "LT",
-                (1, 0): "Xa",
-                (2, 0): "EF",
-                (0, 1): "Xc",
+                (0, 0): "EF",
+                (1, 0): "LT",
+                (0, 1): "Xa",
                 (1, 1): "Xb",
-                (2, 1): "RC",
+                (0, 2): "Xc",
+                (1, 2): "RC",
             },
-            "score": 3.40,
+            "score": 1.30
         },
         "pulse": {
             "map": {
-                (0, 0): "PE",
-                (1, 0): "Xb",
-                (2, 0): "FA",
-                (0, 1): "Xc",
+                (0, 0): "ID",
+                (1, 0): "FA",
+                (2, 0): "SL",
+                (0, 1): "Xb",
                 (1, 1): "Xa",
-                (2, 1): "PC",
-                (0, 2): "SL",
-                (1, 2): "ID",
-                (2, 2): "None",
+                (2, 1): "Xc",
+                (0, 2): "PE",
+                (1, 2): "PI",
+                (2, 2): "PC",
             },
-            "score": 1.88,
+            "score": 0.64
         },
         "shield": {
             "map": {
-                (0, 0): "DS",
-                (1, 0): "Xa",
-                (2, 0): "AA",
-                (0, 1): "Xc",
-                (1, 1): "Xb",
-                (2, 1): "None",
+                (0, 0): "AA",
+                (1, 0): "None",
+                (0, 1): "Xa",
+                (1, 1): "Xc",
+                (0, 2): "Xb",
+                (1, 2): "DS",
             },
-            "score": 3.98,
+            "score": 1.26
         },
         "trails": {
             "map": {
@@ -1869,5 +1874,4 @@ solves = {
             "score": 0.46,
         },
     },
-    
 }
